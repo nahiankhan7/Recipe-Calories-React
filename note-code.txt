@@ -1,0 +1,43 @@
+<div className="col-span-1 md:col-span-4 bg-green-500 p-5 rounded-lg shadow-md">
+  <h1 className="text-xl md:text-2xl text-center text-white font-semibold">
+    Want to Cook: 01
+  </h1>
+  <hr className="my-4 border-gray-300" />
+
+  <div className="overflow-x-auto">
+    <table className="min-w-full bg-white border border-gray-300 rounded-lg">
+      <thead>
+        <tr className="bg-gray-200 text-gray-700">
+          <th className="px-2 md:px-4 py-2 text-left border-b text-sm md:text-base">Name</th>
+          <th className="px-2 md:px-4 py-2 text-left border-b text-sm md:text-base">Time</th>
+          <th className="px-2 md:px-4 py-2 text-left border-b text-sm md:text-base">Calories</th>
+          <th className="px-2 md:px-4 py-2 text-left border-b text-sm md:text-base">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {/* Example rows for demonstration */}
+        <tr className="hover:bg-gray-100">
+          <td className="px-2 md:px-4 py-2 border-b text-sm md:text-base">Recipe 1</td>
+          <td className="px-2 md:px-4 py-2 border-b text-sm md:text-base">30 mins</td>
+          <td className="px-2 md:px-4 py-2 border-b text-sm md:text-base">500 kcal</td>
+          <td className="px-2 md:px-4 py-2 border-b">
+            <button className="bg-blue-500 text-white font-semibold text-sm md:text-base py-1 px-3 md:px-4 rounded hover:bg-blue-600 transition duration-200">
+              Preparing
+            </button>
+          </td>
+        </tr>
+        <tr className="hover:bg-gray-100">
+          <td className="px-2 md:px-4 py-2 border-b text-sm md:text-base">Recipe 2</td>
+          <td className="px-2 md:px-4 py-2 border-b text-sm md:text-base">45 mins</td>
+          <td className="px-2 md:px-4 py-2 border-b text-sm md:text-base">600 kcal</td>
+          <td className="px-2 md:px-4 py-2 border-b">
+            <button className="bg-blue-500 text-white font-semibold text-sm md:text-base py-1 px-3 md:px-4 rounded hover:bg-blue-600 transition duration-200">
+              Preparing
+            </button>
+          </td>
+        </tr>
+        {/* Add more rows as needed */}
+      </tbody>
+    </table>
+  </div>
+</div>
