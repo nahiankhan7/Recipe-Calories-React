@@ -5,6 +5,8 @@ import Banner from "./components/Banner/Banner";
 import Header from "./components/Header/Header";
 import Menus from "./components/Menus/Menus";
 import Tables from "./components/Tables/Tables";
+import { modal } from "./utilities/openModal";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   const [wantToCookItems, setWantToCookItems] = useState([]);
@@ -16,7 +18,7 @@ function App() {
     );
 
     if (alreadyItem) {
-      alert("Already Exists");
+      modal();
     } else {
       setWantToCookItems([...wantToCookItems, item]);
     }
@@ -33,6 +35,8 @@ function App() {
 
   return (
     <div className="container mx-auto">
+      <Modal></Modal>
+
       <Header></Header>
 
       <div className="px-4 md:px-0">
